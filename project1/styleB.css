@@ -1,0 +1,33 @@
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div.box {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    background-color: #eeeff2;
+    border-left: 10px dotted #D0D0FF;
+    padding-left: 10px;
+}
+
+/* 
+div.odd {
+    background-color: #eeeff2;
+}
+*/
+div.final {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.box:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
