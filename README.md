@@ -7,3 +7,7 @@
 #####update in 2023/9/14:
 
 - finished project1
+
+#####update in 2023/9/15:
+
+- finished project2
