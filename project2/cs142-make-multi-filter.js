@@ -7,7 +7,7 @@ function cs142MakeMultiFilter(originalArray) {
             return currentArray;
         }
         if (typeof filterCriteria === "function") {
-            currentArray = currentArray.filter(item => filterCriteria(item))
+            currentArray = currentArray.filter(item => filterCriteria(item));
         }
         else {
             return currentArray;

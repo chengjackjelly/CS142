@@ -33,7 +33,7 @@
     if (typeof window.cs142MakeMultiFilter !== "function") {
       console.error(
         "cs142MakeMultiFilter is not a function",
-        typeof window.cs142MakeMultiFilter
+        typeof window.cs142MakeMultiFilter,
       );
       p1Message = "FAILURE";
     } else {
@@ -185,8 +185,8 @@
   };
 
 
-})();
+}());
 
-checkCs142MakeMultiFilter();
-checkCs142TemplateProcessor();
-checkTestProblem3();
+window.checkCs142MakeMultiFilter();
+window.checkCs142TemplateProcessor();
+window.checkTestProblem3();

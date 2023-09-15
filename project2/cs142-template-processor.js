@@ -1,10 +1,11 @@
+"use strict";
 class Cs142TemplateProcessor {
     constructor(template) {
         this.template = template;
-        this.var_arr = template.split(" ")
+        this.var_arr = template.split(" ");
     }
     fillIn(dictionary) {
-        var result = new String("");
+        var result = String("");
         //separate the word in template and get the word that contained the
         // stray brackets , and remove the outside {{}} then compare it with the key of the dict
         for (var i = 0; i < this.var_arr.length; i++) {
