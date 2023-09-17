@@ -25,10 +25,15 @@
     border-bottom: 3px solid black;
 }
 
+.grid-day:hover {
+    background-color: #dce0e0;
+    cursor: pointer;
+}
+
 .grid-day-dimmed {
     color: #696969;
 }
 
-.bt {
+.lbt .rbt {
     justify-content: start;
 }
