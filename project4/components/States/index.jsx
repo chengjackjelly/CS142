@@ -26,6 +26,23 @@ class States extends React.Component {
     this.setState({ substring: event.target.value });
   }
 
+  statesContained() {
+    const listItems = [];
+
+    for (let i = 0; i < this.state.states.length; i++) {
+      if (this.state.states[i].includes(this.state.substring)) {
+        listItems[i] = <li key={i}> {this.state.states[i]} </li>;
+      }
+    }
+    const retVal = (
+      <div>
+        <ul>{listItems}</ul>
+      </div>
+    );
+
+    return retVal;
+  }
+
   render() {
 
     return (
@@ -38,7 +55,11 @@ class States extends React.Component {
             value={this.state.substring}
             onChange={this.handleChangeBound}
           />
-        </div></div>
+        </div>
+        <div className="cs142-example-output">{this.statesContained()}</div>
+
+
+      </div>
     );
   }
 }
